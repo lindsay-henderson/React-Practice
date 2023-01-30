@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Lottery from './Lotto/Lottery';
 
 function App() {
   return (
     <div className="App">
-      
-
+      <Lottery />
     </div>
   );
 }
