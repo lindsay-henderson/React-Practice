@@ -1,11 +1,11 @@
 import './App.css';
-import BoxContainer from './ColorBoxes/BoxContainer';
+import WiseSquare from './ReactEvents/WiseSquare';
 
 function App() {
   return (
     <div className="App">
-      <BoxContainer/>
-
+    <h1>React Events</h1>
+      <WiseSquare/>
     </div>
   );
 }
