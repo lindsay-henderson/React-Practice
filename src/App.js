@@ -1,10 +1,11 @@
 import './App.css';
-import Lottery from './Lotto/Lottery';
+import CoinContainer from './CoinFlip/CoinContainer';
 
 function App() {
   return (
     <div className="App">
-      <Lottery />
+      <CoinContainer/>
+
     </div>
   );
 }
