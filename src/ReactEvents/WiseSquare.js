@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import './WiseSquare.css'
+// import './WiseSquare.css'
 
 class WiseSquare extends Component {
 
