@@ -5,7 +5,7 @@ class AnnoyingForm extends Component {
     if(evt.keyCode === 56) {
     alert("you pressed *** !")
     } else {
-      alert("less cool")
+      alert("less cool choice dude")
     }
     console.log(evt)
   }
