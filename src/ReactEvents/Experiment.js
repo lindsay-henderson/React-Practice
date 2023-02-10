@@ -13,7 +13,7 @@ class Experiment extends Component {
 
   }
 
-dispense= () => {
+dispense = () => {
   let {messages} = this.props
 
   let rIndex = Math.floor(Math.random() * messages.length)

@@ -1,4 +1,4 @@
-
+/* 
 .square {
   height:200px;
   width: 200px;
@@ -12,4 +12,16 @@
 
 .square:hover {
   background-color: royalblue;
+} */
+
+section {
+  width: 800Px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  border: red, 5px solid
+}
+
+button {
+  margin: 10px;
 }
