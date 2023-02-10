@@ -21,6 +21,9 @@ dispense() {
 }
 
 //bind 'this' inline
+//very explicit
+//cons- if it's going to be passed multiple times, it will have to be bound multiple times
+//calling bind each time creates a new function
 render () {
   return <div className="square" onMouseEnter={this.dispense.bind(this)}>🤓</div>
 }
