@@ -1,7 +1,14 @@
 import React, {Component} from "react"
+import "./wise.css"
 
 
 class WiseSquareWithProps extends Component {
+//binding this in the constructor
+//only has to be done once
+  constructor(props) {
+    super(props);
+      this.dispense = this.dispense.bind(this)
+  }
   static defaultProps = {
     messages: [
       "Hi there",
@@ -12,20 +19,17 @@ class WiseSquareWithProps extends Component {
   }
 
 dispense() {
-  console.log ("this is... ", this)
-
   let {messages} = this.props
 
   let rIndex = Math.floor(Math.random() * messages.length)
   console.log(messages[rIndex])
 }
 
-//bind 'this' inline
-//very explicit
-//cons- if it's going to be passed multiple times, it will have to be bound multiple times
-//calling bind each time creates a new function
+//arrow function at point of render  to bind
+//intent is less clear
+//passes only once, needs to be re-written each time
 render () {
-  return <div className="square" onMouseEnter={this.dispense.bind(this)}>🤓</div>
+  return <div className="square" onMouseEnter={this.dispense}>🤓</div>
 }
 }
 
