@@ -1,13 +1,13 @@
 import './App.css';
 import WiseSquare from './ReactEvents/WiseSquare';
-import AnnoyingForm from './ReactEvents/AnnoyingForm'
+import WiseSquareWithProps from './ReactEvents/WiseSquareWithProps';
 
 function App() {
   return (
     <div className="App">
     <h1>React Events</h1>
       <WiseSquare/>
-      <AnnoyingForm/>
+      <WiseSquareWithProps/>
     </div>
   );
 }

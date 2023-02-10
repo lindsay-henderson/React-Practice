@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-// import './WiseSquare.css'
+
 
 class WiseSquareWithProps extends Component {
   static defaultProps = {
@@ -12,14 +12,17 @@ class WiseSquareWithProps extends Component {
   }
 
 dispense() {
-  let messages =
+  console.log ("this is... ", this)
+
+  let {messages} = this.props
 
   let rIndex = Math.floor(Math.random() * messages.length)
   console.log(messages[rIndex])
 }
 
+//bind 'this' inline
 render () {
-  return <div className="square" onMouseEnter={this.dispense}>🤓</div>
+  return <div className="square" onMouseEnter={this.dispense.bind(this)}>🤓</div>
 }
 }
 
